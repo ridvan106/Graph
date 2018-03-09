@@ -7,6 +7,6 @@ import junit.framework.TestCase;
 public class graphTest extends TestCase {
     public void testGraph(){
         graph g = new graph("osman");
-        Assert.assertEquals(true,g.getDeneme().equals("osman"));
+        Assert.assertEquals(true,g.getDeneme().equals("osmasn"));
     }
 }

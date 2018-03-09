@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="AppTest" time="0" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="graphTest" time="0.022" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.2.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,5 +61,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="AppTest" name="testApp" time="0"/>
+  <testcase classname="graphTest" name="testGraph" time="0.008">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:149)
+	at junit.framework.Assert.assertEquals(Assert.java:155)
+	at graphTest.testGraph(graphTest.java:10)
+</failure>
+  </testcase>
 </testsuite>
